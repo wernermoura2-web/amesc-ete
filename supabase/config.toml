@@ -1,0 +1,6 @@
+project_id = "amesc-ete"
+
+[functions.ete-admin-users]
+# A função valida o JWT em auth.getUser() e confere a associação de administrador.
+# Compatível também com projetos que usam as chaves publishable mais recentes.
+verify_jwt = false
