@@ -1,0 +1,17 @@
+{
+ "id":"./",
+ "name":"AMESC · Monitoramento da ETE",
+ "short_name":"AMESC ETE",
+ "description":"Registros diários da ETE, ordens de serviço e laudos.",
+ "lang":"pt-BR",
+ "start_url":"./",
+ "scope":"./",
+ "display":"standalone",
+ "background_color":"#f7faf7",
+ "theme_color":"#205e45",
+ "prefer_related_applications":false,
+ "icons":[
+  {"src":"icons/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any"},
+  {"src":"icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+ ]
+}
