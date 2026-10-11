@@ -10,7 +10,7 @@ Deno.serve(async req=>{
  if(!authorization.startsWith('Bearer '))return respond(401,{error:'Entre no sistema.'});
  const url=Deno.env.get('SUPABASE_URL')!,anon=Deno.env.get('SUPABASE_ANON_KEY')!,secret=Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!;
  const caller=createClient(url,anon,{global:{headers:{Authorization:authorization}},auth:{persistSession:false,autoRefreshToken:false}});
- const {data:identity,error:identityError}=await caller.auth.getUser();
+ const {data:identity,error:identityError}=await caller.auth.getUser(authorization.slice(7));
  if(identityError||!identity.user)return respond(401,{error:'Entre novamente no sistema.'});
  let body;
  try{if(Number(req.headers.get('Content-Length')||0)>8192)return respond(413,{error:'Dados muito extensos.'});const text=await req.text();if(text.length>8192)return respond(413,{error:'Dados muito extensos.'});body=JSON.parse(text);}catch{return respond(400,{error:'Dados inválidos.'});}
