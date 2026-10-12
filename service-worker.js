@@ -1,6 +1,6 @@
 'use strict';
-const CACHE='amesc-ete-shell-v1.9',BASE=new URL('./',self.location.href);
-const SHELL=['./','index.html','manifest.webmanifest','icons/icon-192.png','icons/icon-512.png','icons/apple-touch-icon.png'];
+const CACHE='amesc-ete-shell-v2.1',BASE=new URL('./',self.location.href);
+const SHELL=['./','assets/readers-c801e326.html','index.html','manifest.webmanifest','icons/icon-192.png','icons/icon-512.png','icons/apple-touch-icon.png'];
 const allowed=new Set(SHELL.map(path=>new URL(path,BASE).href));
 const cacheable=(response,url)=>response.ok&&new URL(response.url||url).origin===BASE.origin;
 self.addEventListener('install',event=>event.waitUntil((async()=>{
