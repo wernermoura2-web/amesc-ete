@@ -1,0 +1,42 @@
+#pollution-open{background:#e7f0f7;border-color:#b9cedd;color:#244d67}#pollution-open svg{width:20px;height:20px;flex:none}dialog.cp-dialog{width:min(1200px,calc(100vw - 24px));max-height:94vh}.cp-period{display:flex;gap:12px;align-items:end;flex-wrap:wrap}.cp-period .field{min-width:115px}.cp-period input,.cp-period select{min-height:44px}.cp-period #cp-year{width:110px}.cp-period button{min-height:44px}.cp-status{font-size:12px;color:#5c716b;margin:16px 0}.cp-tabs{display:flex;gap:8px;flex-wrap:wrap;padding:12px 0;border-top:1px solid #dbe6df;border-bottom:1px solid #dbe6df}.cp-tabs [aria-selected=true]{background:#154f47;color:white;border-color:#154f47}.cp-tabs .btn{min-height:44px}.cp-tools{display:flex;align-items:center;gap:15px;flex-wrap:wrap;padding:16px 0}.cp-tools .check-label{margin:0;font-size:12px;color:#334e48;align-items:center}.cp-tools input[type=checkbox]{width:19px;height:19px}.cp-days{max-width:145px}.cp-tools #cp-print{margin-left:auto;min-height:44px}.cp-small{font-size:12px;color:#59726b;line-height:1.6}.cp-management{display:flex;gap:8px;flex-wrap:wrap;border-top:1px solid #dbe6df;padding-top:18px;margin-top:22px}.cp-management .btn{min-height:44px}.cp-method,.cp-sources{font-size:12px;line-height:1.65;margin-top:18px}.cp-method summary,.cp-sources summary{cursor:pointer;font-weight:600;color:#285b50;padding:8px 0}.cp-declaration{width:min(100%,760px);margin:0 auto;background:white;padding:16px;border:1px solid #cad4d0;color:#111}.cp-process{font-family:Arial,sans-serif;font-size:11px;margin:0 0 10px}.cp-model{border-collapse:collapse;width:100%;table-layout:fixed;font:11px/1.4 Arial,sans-serif;color:#111}.cp-model th,.cp-model td{border:1px solid #333;padding:8px 7px;background:#f3f3f3;overflow-wrap:anywhere;vertical-align:middle}.cp-model th{font-weight:bold;text-align:center;background:#e7e7e7}.cp-model th:first-child{width:30%}.cp-model .cp-model-title{font-size:17px;line-height:1.3;background:#f3f3f3;padding:13px 8px}.cp-model .cp-model-period{font-size:14px;background:white;padding:9px}.cp-model .cp-load{background:#a9c4dd;font-weight:bold}.cp-number{text-align:center;font-variant-numeric:tabular-nums}.cp-label{font-weight:bold}.cp-report-notes{font:10px/1.5 Arial,sans-serif;color:#333}.cp-report-notes p{margin:10px 0}.cp-signatures{display:flex;gap:25px;text-align:center;justify-content:space-between;margin:42px 10px 8px;font:11px/1.5 Arial,sans-serif}.cp-signatures>div{flex:1;border-top:1px solid #333;padding-top:7px}.cp-signatures small{display:block;font-size:9px}.cp-table-scroll{max-height:55vh;overflow:auto;border:1px solid #dbe6df;border-radius:10px}.cp-data-table{border-collapse:collapse;font-size:11px;line-height:1.45;min-width:100%;font-variant-numeric:tabular-nums}.cp-data-table th,.cp-data-table td{border:1px solid #d5e0db;padding:9px 10px;min-width:105px;vertical-align:top;overflow-wrap:anywhere}.cp-data-table th{position:sticky;top:0;background:#eaf3ef;color:#254d42;text-align:left;z-index:1}.cp-data-table tr:nth-child(even) td{background:#f7faf8}.cp-data-table .text-button{font-size:11px;padding:4px;white-space:nowrap}.cp-chart{background:white;border:1px solid #d9e2dd;border-radius:10px;padding:18px}.cp-chart h3{font-size:18px;margin:0 0 15px}.cp-chart svg{display:block;width:100%;height:auto;max-height:650px}.cp-subdialog input{min-height:44px}.cp-subdialog .dialog-footer{position:sticky;bottom:0;background:white}#pollution-print-root{display:none}
+@media(max-width:650px){.cp-dialog .dialog-body{padding:16px}.cp-period{gap:10px}.cp-period>.field,.cp-period>div{flex:1;min-width:110px}.cp-period input,.cp-period select{width:100%}.cp-period #cp-year{width:100%}.cp-period #cp-generate{width:100%}.cp-tabs{display:grid;grid-template-columns:1fr 1fr}.cp-tabs .btn{justify-content:center;padding:9px 6px}.cp-tools #cp-print{width:100%;justify-content:center}.cp-declaration{min-width:610px}.cp-dialog #cp-content{overflow:auto}.cp-model th,.cp-model td{padding:7px 5px}.cp-chart{min-width:560px}.cp-method p{font-size:12px}.cp-management .btn{flex:1;min-width:140px}}
+@media print{
+ @page pollution-declaration{size:A4 portrait;margin:12mm}
+ @page pollution-chart{size:A4 landscape;margin:12mm}
+ @page pollution-table{size:A4 landscape;margin:10mm}
+ body.pollution-printing{margin:0!important;background:white!important;color:#111!important}
+ body.pollution-printing>#print-root,body.pollution-printing>.app,body.pollution-printing>dialog,body.pollution-printing>.toast,body.pollution-printing>.cloud-login{display:none!important}
+ body.pollution-printing>#pollution-print-root{display:block!important;position:static!important;width:auto!important;margin:0!important;padding:0!important}
+ .cp-print-page{break-after:page;font-family:Arial,sans-serif;color:#111;print-color-adjust:exact;-webkit-print-color-adjust:exact}
+ .cp-print-page:last-child{break-after:auto}
+ .cp-print-declaration{page:pollution-declaration}
+ .cp-print-chart{page:pollution-chart}
+ .cp-print-table{page:pollution-table}
+ .cp-print-page h2{font-size:15pt;margin:0 0 4mm}.cp-print-page>p{font-size:9pt;margin:3mm 0}
+ .cp-print-declaration .cp-declaration{width:100%;max-width:none;min-width:0;padding:0;border:0;margin:0}
+ .cp-print-declaration .cp-model{font-size:8.5pt;line-height:1.3}
+ .cp-print-declaration .cp-model th,.cp-print-declaration .cp-model td{padding:2.2mm 1.5mm}
+ .cp-print-declaration .cp-model-title{font-size:12pt;padding:3mm}
+ .cp-print-declaration .cp-report-notes{font-size:7.5pt;line-height:1.3}
+ .cp-print-declaration .cp-signatures{margin:14mm 3mm 0;font-size:8pt}
+ .cp-print-declaration .cp-signatures small{font-size:7pt}
+ .cp-print-chart svg{display:block;width:100%;height:auto;max-height:160mm}
+ .cp-print-table .cp-data-table{width:100%;table-layout:fixed;min-width:0;font-size:7.7pt}
+ .cp-print-table .cp-data-table th,.cp-print-table .cp-data-table td{position:static;min-width:0;padding:2mm 1mm;line-height:1.25;border-color:#777;overflow-wrap:anywhere}
+ .cp-print-table .cp-data-table th:first-child,.cp-print-table .cp-data-table td:first-child{width:29mm}
+ .cp-print-table .cp-data-table th:nth-child(2),.cp-print-table .cp-data-table td:nth-child(2){width:35mm}
+ .cp-print-table tr{break-inside:avoid}.cp-print-table thead{display:table-header-group}
+}
+
+/* Keep long controls within the mobile dialog and reserve room for print signatures. */
+#pollution-dialog #cp-content{max-width:100%;min-width:0;overflow:auto}.cp-management .btn{white-space:normal;overflow-wrap:anywhere}
+@media print{.cp-print-declaration .cp-model{font-size:8pt}.cp-print-declaration .cp-model th,.cp-print-declaration .cp-model td{padding:1.6mm 1.3mm}.cp-print-declaration .cp-signatures{margin-top:8mm}.cp-print-chart svg{height:135mm!important;max-height:135mm!important;width:100%}.cp-print-chart>p{font-size:8pt;margin:2mm 0}.cp-print-chart{break-inside:avoid}}
+@media print{.cp-print-chart>*{page:pollution-chart}.cp-print-chart svg{break-before:avoid;break-after:avoid}}
+
+@media print{.cp-print-chart .cp-print-graph{display:block;width:100%;height:135mm;object-fit:contain;break-inside:avoid}}
+@media print{
+ .cp-print-chart{position:relative;height:172mm;max-height:172mm;overflow:hidden}
+ .cp-print-chart h2{position:absolute;top:0;left:0;right:0;margin:0}
+ .cp-print-chart .cp-print-graph{position:absolute;top:12mm;left:0;right:0;height:145mm;width:100%}
+ .cp-print-chart>p{position:absolute;left:0;right:0;bottom:0;margin:0}
+}
