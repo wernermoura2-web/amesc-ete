@@ -40,3 +40,5 @@
  .cp-print-chart .cp-print-graph{position:absolute;top:12mm;left:0;right:0;height:145mm;width:100%}
  .cp-print-chart>p{position:absolute;left:0;right:0;bottom:0;margin:0}
 }
+
+.cp-signatures>div:only-child{flex:0 1 85mm;max-width:85mm;margin-left:auto;margin-right:auto}
