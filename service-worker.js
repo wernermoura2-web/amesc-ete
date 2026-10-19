@@ -1,5 +1,5 @@
 'use strict';
-const CACHE='amesc-ete-shell-v2.7',BASE=new URL('./',self.location.href);
+const CACHE='amesc-ete-shell-v2.7.1',BASE=new URL('./',self.location.href);
 const SHELL=['./','assets/ete-pollution-core.js','assets/ete-pollution-ui.js','assets/ete-pollution.css','assets/readers-c801e326.html','index.html','manifest.webmanifest','icons/icon-192.png','icons/icon-512.png','icons/apple-touch-icon.png'];
 const allowed=new Set(SHELL.map(path=>new URL(path,BASE).href));
 const cacheable=(response,url)=>response.ok&&new URL(response.url||url).origin===BASE.origin;
