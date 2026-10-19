@@ -2,6 +2,14 @@
 
 Sistema em português com medições diárias, OS, laudos, produtos, MTR, importação com conferência e impressão mensal. O HTML funciona sozinho; quando o Supabase está configurado, exige email e senha e salva os registros no banco compartilhado.
 
+## Carga poluidora (v2.7)
+
+No menu **Carga poluidora**, escolha um ano, um mês ou duas datas e toque em **Mostrar período**. As abas mostram a declaração, a tabela de dados e os gráficos RNFT e DBO. **Imprimir** gera apenas o documento da aba escolhida: declaração em A4 vertical, gráficos em A4 horizontal e tabela dividida em grupos de colunas. A tabela também pode ser baixada como CSV.
+
+Os laudos cadastrados no monitoramento alimentam a tabela pela data da coleta. As declarações históricas preservam os números dos documentos de origem; desmarcar **Usar declaração do relatório** recalcula com as médias disponíveis e os dias do calendário. RNFT é tratado como sólidos suspensos, separado dos sólidos sedimentáveis. Valores ausentes e resultados abaixo do limite de quantificação não são convertidos em zero. As referências dos gráficos são as informadas na planilha histórica.
+
+O administrador pode incluir ou corrigir resultados, editar os dados da empresa e importar uma cópia JSON com conferência. Os demais usuários podem consultar, imprimir e guardar cópias. Os dados ficam no banco protegido por RLS e revisão de alterações concorrentes. A importação histórica e o SQL deste módulo foram instalados no projeto conectado; os documentos e dados históricos não são publicados neste repositório.
+
 ## Situação desta entrega
 
 O banco está instalado no projeto **amesc-ete**, `https://kwvszryduljbfwbytgma.supabase.co`. As quatro migrações de `supabase/migrations` estão aplicadas e verificadas. Werner Moura Ewald (`werner.moura2@gmail.com`) já possui acesso de administrador ativo. A função `ete-admin-users` está ativa, verifica a sessão e a permissão no servidor. O HTML inclui o endereço e a chave pública. O repositório GitHub aguarda a conexão da conta.
